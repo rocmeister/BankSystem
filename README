@@ -1,0 +1,18 @@
+README
+
+This is a Bank System project that 
+
+1. Used OOP concpets to simulate real world Bank, Account, and ATM objects;
+
+2. Used property and indexes;
+
+3. Used inheritance from Account class to a CreditAccount subclass, and added
+fields, properties, as well as overriding the WithdrawMoney method;
+
+4. Implemented a BigMoneyFetched event, when more than 10,000 number of 
+money is withdrawn. ATM declares this Event using Delegate. This event is 
+registered in main.
+
+5. Defined a inner exception type BadCashException that happens when an ATM 
+returns a bad cash to the user. This exception is thrown in ATM class and 
+caught in main.
