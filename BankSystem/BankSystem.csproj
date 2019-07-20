@@ -55,8 +55,12 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="ATM.cs" />
+    <Compile Include="BadCashException.cs" />
     <Compile Include="Bank.cs" />
     <Compile Include="BankDemo.cs" />
+    <Compile Include="BigMoneyFetchedEventArgs.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="CreditAccount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
