@@ -5,11 +5,20 @@ namespace BankSystem
 {
     public class ATM
     {
-        // declare the event delegation
-        public delegate void BigMoneyFetchedEventHandler(object sender, BigMoneyFetchedEventArgs args);
 
-        // declare the event variable
-        public event BigMoneyFetchedEventHandler BigMoneyFetched;
+        public event EventHandler<BigMoneyFetchedEventArgs> BigMoneyFetched;
+
+        // other ways to declare this event
+        // Using the Action<T1, T2> delegate    
+        //public event Action<object, BigMoneyFetchedEventArgs> BigMoneyFetched;
+        //public event Action<Account, double> BigMoneyFetched;
+
+        // A more tedious way by defining our own delegate
+        //// declare the event delegation
+        //public delegate void BigMoneyFetchedEventHandler(object sender, BigMoneyFetchedEventArgs args);
+
+        //// declare the event variable
+        //public event BigMoneyFetchedEventHandler BigMoneyFetched;
 
         private Bank bank;
         public ATM(Bank bank)
@@ -95,46 +104,6 @@ namespace BankSystem
                         break;
                 }
 
-                //if (op == "1")
-                //{
-                //    ShowAccountInfo(account);
-                //}
-                //else if (op == "2")
-                //{
-                //    Show("save money");
-                //    string smoney = GetInput();
-                //    double money = double.Parse(smoney);
-
-                //    bool ok = account.SaveMoney(money);
-                //    if (ok) Show("ok");
-                //    else Show("eeer");
-
-                //    //Show("balance: " + account.Money);
-                //    ShowAccountInfo(account);
-                //}
-                //else if (op == "3")
-                //{
-                //    Show("withdraw money");
-                //    string smoney = GetInput();
-                //    double money = double.Parse(smoney);
-
-                //    bool ok = account.WithdrawMoney(money);
-                //    if (ok) Show("ok");
-                //    else Show("eeer");
-
-                //    //Show("balance: " + account.Money);
-                //    ShowAccountInfo(account);
-
-                //    // handle a warning event
-                //    if (money > 10000 && BigMoneyFetched != null)
-                //    {
-                //        BigMoneyFetched(this, new BigMoneyFetchedEventArgs(account, money));
-                //    }
-                //}
-                //else
-                //{
-                //    Show("Invalid option");
-                //}
             }
             
         }
@@ -147,11 +116,9 @@ namespace BankSystem
                 {
                     Console.WriteLine("balance: {0}, credit limit: {1}", 
                         account.Money, ((CreditAccount)account).Limit);
-                    //Show("balance: {0}, credit limit: {1}", account.Money);
                 }
                 else
                 {
-                    //Show("in debt: " + -account.Money);
                     Console.WriteLine("in debt: {0}, credit limit: {1}",
                         -account.Money, ((CreditAccount)account).Limit);
                 }
@@ -168,7 +135,7 @@ namespace BankSystem
         }
         public string GetInput()
         {
-            return Console.ReadLine();// ÊäÈë×Ö·û
+            return Console.ReadLine();// Read in the Input from user
         }
     }
 

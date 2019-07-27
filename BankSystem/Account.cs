@@ -18,7 +18,6 @@ namespace BankSystem
             Money = 0;
         }
 
-        //public double Money { get; set; }
         public double Money { get; protected set; }
         public string Id { get; } // id cannot be reset once established
         public string Pwd { get; private set; }
@@ -39,15 +38,6 @@ namespace BankSystem
             {
                 Money -= money;
                 return true;
-                //Random rnd = new Random();
-                //if (rnd.Next(3) < 1)
-                //{
-                //    Money -= money;
-                //    return true;
-                //} else
-                //{
-                //    throw new ;
-                //}
                 
             }
 

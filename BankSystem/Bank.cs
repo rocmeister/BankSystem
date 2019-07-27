@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace BankSystem
@@ -51,13 +49,15 @@ namespace BankSystem
 
         public Account FindAccount(string id, string pwd)
         {
-            foreach (Account account in this._accounts)
+            foreach (Account account in _accounts)
             {
                 if (account.IsMatch(id, pwd))
                 {
                     return account;
                 }
             }
+
+            // another way of finding the account
             //for (int i = 0; i < accounts.Count; i++)
             //{
             //    Account account = accounts[i];
