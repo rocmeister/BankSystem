@@ -24,3 +24,10 @@ D:\csharp课程\03 面向对象\ch03\BankSystemV1\BankSystem\obj\Debug\BankSyste
 \\Mac\Home\Desktop\cousera\week2\BankSystemV1Rocky\BankSystem\obj\Debug\BankSystem.csproj.CoreCompileInputs.cache
 \\Mac\Home\Desktop\cousera\week2\BankSystemV1Rocky\BankSystem\obj\Debug\BankSystem.exe
 \\Mac\Home\Desktop\cousera\week2\BankSystemV1Rocky\BankSystem\obj\Debug\BankSystem.pdb
+\\Mac\Home\Desktop\BankSystem\BankSystem\obj\Debug\BankSystem.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\BankSystem\BankSystem\obj\Debug\BankSystem.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\BankSystem\BankSystem\obj\Debug\BankSystem.exe
+\\Mac\Home\Desktop\BankSystem\BankSystem\obj\Debug\BankSystem.pdb
+\\Mac\Home\Desktop\BankSystem\BankSystem\bin\Debug\BankSystem.exe.config
+\\Mac\Home\Desktop\BankSystem\BankSystem\bin\Debug\BankSystem.exe
+\\Mac\Home\Desktop\BankSystem\BankSystem\bin\Debug\BankSystem.pdb
